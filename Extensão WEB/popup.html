@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cor de Fundo</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 10px;
+      }
+      h3 {
+        margin-bottom: 10px;
+      }
+      button {
+        margin: 5px;
+        padding: 10px;
+        width: 100px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Filtros de Acessibilidade:</h3>
+    <button data-filtro="contraste" style="background-color: #000; color: #fff">
+      Alto Contraste
+    </button>
+    <button data-filtro="dislexia">Fonte Dislexia</button>
+    <button data-filtro="zoom">Leitura Ampliada</button>
+    <button id="reset" style="background-color: #ccc">Resetar Estilos</button>
+    <button
+      id="gerarDescricoes"
+      style="background-color: #4caf50; color: white"
+    >
+      Descrever Imagens
+    </button>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
